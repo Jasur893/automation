@@ -1,0 +1,745 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Roboto:wght@400;500&family=Rubik:wght@500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --int: "Inter";
+  --rob: "Roboto";
+  --rub: "Rubik";
+}
+
+body{
+  background: #E5E5E5;
+}
+
+/* Header start */
+.header__bg{
+  background: #5e71ff !important;
+}
+
+.one-nav-index{
+  z-index: 1000;
+}
+
+.header__fonts{
+  font-family: var(--int);
+  font-weight: 600;
+  font-size: 17px;
+  color: white !important;
+}
+
+.header__btn:hover{
+  color: #000 !important;
+}
+
+.link__size{
+  width: max-content !important;
+}
+
+.header__bottom{
+  height: 80px;
+}
+
+/* Modal mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+.btn-close{
+  background: url("../img/modal-close.svg");
+  background-repeat: no-repeat;
+}
+
+
+.modal-header{
+  align-items: unset;
+}
+
+.mod-h5{
+  font-family: var(--rub);
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.modal__link1{
+  color: #000;
+  text-decoration: none;
+}
+
+.modal__link3{
+  color: #898989;
+  text-decoration: none;
+}
+
+
+
+/* Modal mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+
+/* Header end */
+
+/* animation__section start */
+.automation__section{
+  position: relative;
+}
+
+.anime-bg-blue{
+  position: absolute;
+  top: -83px;
+  z-index: -1;
+}
+
+.anime-bg-gray{
+  position: absolute;
+  top: -83px;
+  left: 60px;
+  z-index: -2;
+}
+
+.anie__inform-left{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.anime__info{
+  width: 100%;
+}
+
+.automat__title{
+  font-family: var(--int);
+  font-weight: 600;
+  font-size: 45px;
+  color: #fff;
+}
+
+.automat__text{
+  font-family: var(--int);
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  max-width: 576px;
+}
+
+.automat__link{
+  font-family: var(--int);
+  font-weight: 600;
+  line-height: 22px;
+}
+
+/* Animatsiya gear start */
+.gear__section{
+  max-width: 560px;
+  height: 570px;
+  display: flex;
+  position: relative;
+  margin-right: 0;
+  /* border: 1px solid red; */
+}
+
+.gear__item1{
+  position: absolute;
+  top: 150px;
+  left: 10px;;
+}
+
+.gear__item2{
+  position: absolute;
+  top: 95px;
+  left: 310px;
+  /* border: 1px solid blue; */
+}
+
+.gear__item3{
+  position: absolute;
+  top: 325px;
+  left: 255px;;
+}
+
+.gear{
+  position: relative;
+  width: 280px;
+  height: 280px;
+  /* border: 1px solid black; */
+}
+
+.gear__size{
+  width: 225px;
+  height: 225px;
+}
+
+.gear__item{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 4px;
+}
+
+.big-gear{
+  position: absolute;
+  top: 38px;
+  right: 38px;
+  width: 197px;
+  height: 197px;
+  animation: 15s big-rotate linear infinite;
+}
+
+.big-gear-2{
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  width: 150px;
+  height: 150px;
+  animation: 15s big-rotate linear infinite;
+}
+
+.big-gear>img, .big-gear-2>img{
+  width: 100%;
+  height: 100%;
+}
+
+.gear__outline{
+  position: relative;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  /* background: green; */
+  animation: 15s gear-rotate linear infinite;
+}
+
+.gear__outline_size{
+  width: 230px;
+  height: 230px;
+}
+
+.img__top{
+  position: absolute;
+  top: -29px;
+  right: 53px;
+  width: 180px;
+  transform: rotate(15deg);
+}
+
+.img__top-2{
+  position: absolute;
+  top: -19px;
+  right: 38px;
+  width: 150px;
+  transform: rotate(16deg);
+}
+
+.img__right{
+  position: absolute;
+  top: 57px;
+  right: -23px;
+  width: 94px;
+  transform: rotate(15deg);
+}
+
+.img__right-2{
+  position: absolute;
+  top: 45px;
+  right: -20px;
+  width: 87px;
+  transform: rotate(17deg);
+}
+
+.img__bottom{
+  position: absolute;
+  bottom: -39px;
+  right: 52px;
+  width: 180px;
+  transform: rotate(20deg);
+}
+
+.img__bottom>img:first-child {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid blue; */
+}
+
+.img__bottom>img:last-child{
+  position: absolute;
+  /* border: 1px solid red; */
+  width: 115px;
+  top: 27px;
+  left: 30px;
+}
+
+.img__bottom-2{
+  position: absolute;
+  bottom: -25px;
+  right: 38px;
+  width: 150px;
+  transform: rotate(20deg);
+}
+
+.img__left{
+  position: absolute;
+  top: 55px;
+  left: -24px;
+  width: 100px;
+  transform: rotate(19deg);
+}
+
+.img__left-2{
+  position: absolute;
+  top: 50px;
+  left: -23px;
+  width: 87px;
+  transform: rotate(13deg);
+  /* border: 1px solid blue; */
+}
+
+.img__left-2>img:first-child{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.img__left-2>img:last-child{
+  position: absolute;
+  /* border: 1px solid red; */
+  width: 50px;
+  top: 27px;
+  left: 15px;
+}
+
+.icon-center{
+  position: absolute;
+  top: 93px;
+  right: 93px;
+  width: 87px;
+  height: 87px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-center-2{
+  position: absolute;
+  top: 77px;
+  right: 77px;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes gear-rotate {
+  0% {
+    transform: rotate (0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes big-rotate {
+  0% {
+    transform: rotate (0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Animatsiya gear end */
+
+
+
+
+
+/* progres start */
+/* Blue Line  start  */
+.protses__section{
+  width: 90vw;
+  margin-top: 200px;
+  margin-bottom: 250px;
+  background: #fff;
+  position: relative;
+}
+
+.lineposition{
+  position: absolute;
+  transform: translateY(-50%);
+  width: 90%;
+}
+
+.imgs{
+  width: 100%;
+}
+
+.title-title{
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.line__title{
+  font-family: var(--int);
+  font-weight: 600;
+  font-size: 35px;
+  color: #fff;
+}
+/* Blue Line end  */
+
+
+
+
+
+
+
+
+
+.progres__top{
+  padding-top: 100px;
+}
+
+.row__section{
+  margin-left: auto;
+  width: 90%;
+}
+
+.card__section>img{
+  width: 46px;
+  height: 46px;
+}
+
+.card-info__text1{
+  font-family: var(--int);
+  font-weight: 600;
+  font-size: 23px;
+  color: #465DFF;
+}
+.card-info__text2{
+  font-family: var(--int);
+  font-weight: 500;
+  color: #252525;
+  padding-bottom: 20px;
+}
+
+/* Carusel start */
+.slider__section{
+  background: #fff;
+  position: relative;
+  margin-bottom: 300px;
+  width: 100vw;
+}
+
+.lineposition-2{
+  position: absolute;
+  right: 0;
+  transform: translateY(-50%);
+  width: 80%;
+  /* border: 1px solid red; */
+}
+
+.imgs{
+  width: 100%;
+}
+
+.title-title2{
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.slider__content{
+  padding-top: 150px;
+  padding-bottom: 10px;
+}
+
+.card__photo{
+  width: 63px;
+  height: 63px;
+  margin: 0 auto;
+}
+
+.carusel__links{
+  margin-top: 70px;
+}
+
+/* Carusel top */
+.card__sectiontrans {
+  border-top: 8px solid #465DFF !important;
+  margin: 10px 15px;
+  transition: .6s ease;
+}
+
+.card__sectiontrans:hover {
+  transform: scale(1.05);
+}
+
+.card-block {
+   padding: 10px;
+   height: 300px;
+}
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+
+/* carusel mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+.scrollcards {
+  height: 530px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent;
+}
+
+div.scrollcards .card{
+    display: inline-block;
+    padding: 14px;
+    text-decoration: none;
+    width: 320px;
+    height: 470px;
+}
+/* Carusel end  mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/
+
+/* Reklam start */
+.reklam{
+  width: 100%;
+  background: #fff;
+  margin-bottom: 300px;
+}
+
+.reklam__top{
+  position: relative;
+  width: 100%;
+  min-height: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.reklam-top__content{
+  max-width: 697px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.rek-title{
+  font-family: var(--int);
+  font-weight: 600;
+  font-size: 50px;
+  color: #252525;
+}
+
+.rek-text{
+  font-family: var(--int);
+  font-weight: 500;
+  font-size: 17px;
+  max-width: 416px;
+  color: #252525;
+}
+
+.reklam-top__img{
+  position: absolute;
+  top: -100px;
+  right: 20px;
+}
+
+/* reklam bottom start */
+.reklam__bottom{
+  position: relative;
+  width: 100%;
+  min-height: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.lineposition-3{
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  /* border: 1px solid red; */
+}
+
+.reklam-bottom__content{
+  max-width: 697px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* border: 1px solid red; */
+}
+
+
+
+.rek-title2{
+  font-family: var(--int);
+  font-weight: 600;
+  font-size: 50px;
+  color: #465DFF;
+}
+
+
+.title-title3{
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.line__title3{
+  max-width: 620px;
+  font-family: var(--int);
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+}
+
+/* footer start */
+.footer{
+  height: 330px;
+  border-radius: 5px;
+}
+
+.footer__left{
+  width: 50%;
+  background: #fff;
+}
+
+.footer__content{
+  width: 70%;
+}
+
+.header__fonts_black{
+  color: black;
+  font-family: var(--int);
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.footer__list{
+  list-style: none;
+
+}
+
+
+
+
+
+/* footer right */
+.footer__right{
+  background-image: linear-gradient(to left, #3C54FF, #8291FF);
+  /* border: 1px solid red; */
+  border-radius: 5px;
+  width: 50%;
+}
+
+.footer__li3{
+  color: #fff;
+  font-family: var(--int);
+  font-weight: 600;
+  width: 246px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media */
+@media (max-width: 992px) {
+  .anime-bg-blue>img{
+    height: 450px;
+  }
+
+  .imgs>img{
+    height: 120px;
+  }
+
+  .imgs3>img{
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px){
+  .line__title3{
+    font-size: 18px;
+  }
+
+  .imgs3>img{
+    height: 180px;
+  }
+}
+
+
+@media (max-width: 720px) {
+  .gear__right{
+    display: none;
+  }
+}
+
+@media (max-width: 560px){
+  .mod-h5{
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 525px) {
+  .line__title{
+    font-size: 25px;
+  }
+
+  .footer{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer__left, .footer__right{
+    width: 100%;
+  }
+
+  .rek-title, .rek-title2{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 370px) {
+  .automat__title{
+    font-size: 30px;
+  }
+
+  .automat__links{
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+  }
+}
